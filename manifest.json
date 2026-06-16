@@ -1,16 +1,16 @@
 {
   "name": "evisions-presentation-assets",
   "description": "Curated, client-safe evisions images for AI-built HTML/PPTX presentation decks. Served via jsDelivr; reference `url` in decks, or embed from `path` for offline/PPTX.",
-  "version": "v2",
+  "version": "v3",
   "repo": "ai-evisions/presentation-assets",
-  "cdn_pattern": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/<file>",
+  "cdn_pattern": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/<file>",
   "note": "Public repo. Only client-safe images belong here. usage=review means confirm consent/personal-data before client-facing use.",
   "count": 16,
   "assets": [
     {
       "file": "logo-evisions-horizontal-black.svg",
       "path": "optimized/logo-evisions-horizontal-black.svg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/logo-evisions-horizontal-black.svg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/logo-evisions-horizontal-black.svg",
       "description": "Horizontal evisions logo lockup (brandmark + wordmark) in black, vector SVG.",
       "tags": [
         "logo",
@@ -25,7 +25,7 @@
     {
       "file": "brandmark-tile-dark.svg",
       "path": "optimized/brandmark-tile-dark.svg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/brandmark-tile-dark.svg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/brandmark-tile-dark.svg",
       "description": "evisions brandmark (arch + arrow) on a dark #202020 square tile, vector SVG.",
       "tags": [
         "brandmark",
@@ -41,7 +41,7 @@
     {
       "file": "brandmark-arch-arrow.png",
       "path": "optimized/brandmark-arch-arrow.png",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/brandmark-arch-arrow.png",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/brandmark-arch-arrow.png",
       "description": "evisions brandmark (orange arc + dark arrow), standalone glyph.",
       "tags": [
         "brandmark",
@@ -59,7 +59,7 @@
     {
       "file": "brand-linkedin-cover-dark.png",
       "path": "optimized/brand-linkedin-cover-dark.png",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/brand-linkedin-cover-dark.png",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/brand-linkedin-cover-dark.png",
       "description": "Dark evisions LinkedIn cover banner: centered logo over a dotted globe with the brand gradient accent line.",
       "tags": [
         "brand",
@@ -79,7 +79,7 @@
     {
       "file": "office-building-exterior-signage.jpg",
       "path": "optimized/office-building-exterior-signage.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/office-building-exterior-signage.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/office-building-exterior-signage.jpg",
       "description": "evisions illuminated logo sign on the brick facade of the office building against a clear blue sky.",
       "tags": [
         "office",
@@ -98,7 +98,7 @@
     {
       "file": "mockup-stationery-letterhead.jpg",
       "path": "optimized/mockup-stationery-letterhead.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/mockup-stationery-letterhead.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/mockup-stationery-letterhead.jpg",
       "description": "Flat-lay stationery mockup on a dark surface: letterhead, patterned business cards, pencils and paperclips.",
       "tags": [
         "mockup",
@@ -117,7 +117,7 @@
     {
       "file": "mockup-hoodie-pattern-back.jpg",
       "path": "optimized/mockup-hoodie-pattern-back.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/mockup-hoodie-pattern-back.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/mockup-hoodie-pattern-back.jpg",
       "description": "Merch mockup: person from behind in a dark hoodie printed with the arrow pattern and brandmark, on a dark tiled wall.",
       "tags": [
         "mockup",
@@ -137,7 +137,7 @@
     {
       "file": "mockup-socks-global-sockcess.jpg",
       "path": "optimized/mockup-socks-global-sockcess.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/mockup-socks-global-sockcess.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/mockup-socks-global-sockcess.jpg",
       "description": "Merch mockup: folded socks in the arrow pattern, label 'Global sockcess starts with us!', on concrete.",
       "tags": [
         "mockup",
@@ -157,7 +157,7 @@
     {
       "file": "mockup-socks-global-sockcess-02.jpg",
       "path": "optimized/mockup-socks-global-sockcess-02.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/mockup-socks-global-sockcess-02.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/mockup-socks-global-sockcess-02.jpg",
       "description": "Merch mockup: folded patterned socks with the 'Global sockcess' label (alternate of the socks mockup).",
       "tags": [
         "mockup",
@@ -178,7 +178,7 @@
     {
       "file": "mockup-notebook-brain-404.jpg",
       "path": "optimized/mockup-notebook-brain-404.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/mockup-notebook-brain-404.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/mockup-notebook-brain-404.jpg",
       "description": "Merch mockup: black notebook with orange band, cover text 'Write it down before your brain 404s'.",
       "tags": [
         "mockup",
@@ -197,7 +197,7 @@
     {
       "file": "mockup-wrapping-paper-pattern.jpg",
       "path": "optimized/mockup-wrapping-paper-pattern.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/mockup-wrapping-paper-pattern.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/mockup-wrapping-paper-pattern.jpg",
       "description": "Mockup: rolled wrapping paper printed with the evisions arrow pattern on a dark surface.",
       "tags": [
         "mockup",
@@ -215,7 +215,7 @@
     {
       "file": "office-podcast-studio-neon.jpg",
       "path": "optimized/office-podcast-studio-neon.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/office-podcast-studio-neon.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/office-podcast-studio-neon.jpg",
       "description": "Office podcast/recording studio: neon evisions brandmark on an acoustic-panel wall, round wooden table, broadcast mics, velvet chairs.",
       "tags": [
         "office",
@@ -235,7 +235,7 @@
     {
       "file": "office-podcast-studio-neon-02.jpg",
       "path": "optimized/office-podcast-studio-neon-02.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/office-podcast-studio-neon-02.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/office-podcast-studio-neon-02.jpg",
       "description": "Office podcast/recording studio, wider angle with curtain: neon evisions brandmark, mics and table.",
       "tags": [
         "office",
@@ -255,7 +255,7 @@
     {
       "file": "office-awards-iea24.jpg",
       "path": "optimized/office-awards-iea24.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/office-awards-iea24.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/office-awards-iea24.jpg",
       "description": "IEA24 (Internet Effectiveness Awards) glass trophies on a white table, with colleagues blurred in the background.",
       "tags": [
         "office",
@@ -275,7 +275,7 @@
     {
       "file": "office-frosted-glass-pattern.jpg",
       "path": "optimized/office-frosted-glass-pattern.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/office-frosted-glass-pattern.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/office-frosted-glass-pattern.jpg",
       "description": "Frosted glass office partition with the evisions arrow pattern cut into it, office bokeh behind.",
       "tags": [
         "office",
@@ -294,7 +294,7 @@
     {
       "file": "team-group-photo-rustonka.jpg",
       "path": "optimized/team-group-photo-rustonka.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v2/optimized/team-group-photo-rustonka.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/ai-evisions/presentation-assets@v3/optimized/team-group-photo-rustonka.jpg",
       "description": "Large evisions team group photo outdoors at the Rustonka plaza, around 30 people plus a dog, office buildings behind.",
       "tags": [
         "team",
@@ -308,8 +308,7 @@
         "height": 1066
       },
       "people": true,
-      "usage": "review",
-      "note": "Around 30 identifiable people. Marketing team photo; confirm consent for public/CDN use."
+      "usage": "client-safe"
     }
   ]
 }

@@ -72,8 +72,7 @@ const ASSETS = [
     tags: ["office", "pattern", "brand", "detail"], orientation: "landscape", people: false, usage: "client-safe" },
   { src: "JW1_3928 Kopie.jpg", out: "team-group-photo-rustonka.jpg", mode: "jpeg",
     description: "Large evisions team group photo outdoors at the Rustonka plaza, around 30 people plus a dog, office buildings behind.",
-    tags: ["team", "people", "office", "group"], orientation: "landscape", people: true, usage: "review",
-    note: "Around 30 identifiable people. Marketing team photo; confirm consent for public/CDN use." },
+    tags: ["team", "people", "office", "group"], orientation: "landscape", people: true, usage: "client-safe" },
 ];
 
 function dims(p) {
