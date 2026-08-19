@@ -27,6 +27,15 @@ jobs:
           python3 .github/scripts/validate_manifest.py --selftest
           python3 .github/scripts/validate_manifest.py
 
+      # Na `main` musí navíc existovat git tag, na který se url pinují. V PR ještě
+      # existovat nemůže (tag vzniká až při publikaci přes ./publish.sh), takže se
+      # kontroluje jen po merge — a rozbité publikování se pozná hned, ne až v decku.
+      - name: publikovaná verze má existující tag (jen na main)
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git fetch --tags --quiet
+          python3 .github/scripts/validate_manifest.py --require-tag
+
       - name: build.mjs je platný JS a zná každý soubor v optimized/
         run: |
           node --check build.mjs
@@ -44,8 +53,14 @@ jobs:
           print(f"OK: build.mjs zná všech {len(have)} souborů v optimized/")
           PY
 
-      - name: velikost servírované sady (jsDelivr má ~50MB limit na repo)
+      - name: velikost repa vůči jsDelivr limitu (~50MB)
         run: |
-          SIZE_KB=$(du -sk optimized | cut -f1)
-          echo "optimized/ = ${SIZE_KB} KB"
-          test "$SIZE_KB" -lt 45000 || { echo "::error::optimized/ se blíží 50MB limitu jsDelivr"; exit 1; }
+          # POZOR: limit platí na REPO, ne na working tree — historie binárek se počítá.
+          # `du -sk optimized` (bez --apparent-size) navíc měřil alokované bloky, které
+          # se liší mezi runnerem a Macem. Měříme apparent size i velikost packu.
+          SERVED_KB=$(du -sk --apparent-size optimized | cut -f1)
+          PACK_BYTES=$(git count-objects -v | awk '/size-pack/ {print $2 * 1024}')
+          PACK_KB=$((PACK_BYTES / 1024))
+          echo "optimized/ (apparent) = ${SERVED_KB} KB | git pack = ${PACK_KB} KB"
+          test "$SERVED_KB" -lt 45000 || { echo "::error::servírovaná sada se blíží 50MB limitu"; exit 1; }
+          test "$PACK_KB" -lt 45000 || { echo "::error::repo (včetně historie) se blíží 50MB limitu jsDelivr"; exit 1; }
