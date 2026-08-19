@@ -1,0 +1,51 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install Pillow (rozměry obrázků)
+        run: pip install --quiet Pillow
+
+      - name: manifest.json souhlasí s optimized/
+        run: |
+          python3 .github/scripts/validate_manifest.py --selftest
+          python3 .github/scripts/validate_manifest.py
+
+      - name: build.mjs je platný JS a zná každý soubor v optimized/
+        run: |
+          node --check build.mjs
+          python3 - <<'PY'
+          import json, pathlib, re, sys
+          build = pathlib.Path("build.mjs").read_text()
+          outs = set(re.findall(r'out:\s*"([^"]+)"', build))
+          have = {p.name for p in pathlib.Path("optimized").iterdir()
+                  if p.is_file() and not p.name.startswith(".")}
+          missing = have - outs
+          if missing:
+              print("::error::v optimized/ leží soubory, které build.mjs neumí vyrobit:",
+                    sorted(missing))
+              sys.exit(1)
+          print(f"OK: build.mjs zná všech {len(have)} souborů v optimized/")
+          PY
+
+      - name: velikost servírované sady (jsDelivr má ~50MB limit na repo)
+        run: |
+          SIZE_KB=$(du -sk optimized | cut -f1)
+          echo "optimized/ = ${SIZE_KB} KB"
+          test "$SIZE_KB" -lt 45000 || { echo "::error::optimized/ se blíží 50MB limitu jsDelivr"; exit 1; }
